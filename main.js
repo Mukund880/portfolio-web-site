@@ -243,7 +243,8 @@ function initProjectExpansion() {
       const features = dataNode.querySelector('.data-features').innerText.split('|');
       const tech = dataNode.querySelector('.data-tech').innerText.split('|');
       const imagesNode = dataNode.querySelector('.data-images');
-      const images = imagesNode ? imagesNode.innerText.split('|') : [];
+      const imagesRaw = imagesNode ? imagesNode.textContent.trim() : '';
+      const images = imagesRaw ? imagesRaw.split('|') : [];
       
       // 2. Populate Modal Top
       mBg.style.background = theme;
