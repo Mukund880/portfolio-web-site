@@ -242,6 +242,8 @@ function initProjectExpansion() {
       const desc = dataNode.querySelector('.data-description').innerText;
       const features = dataNode.querySelector('.data-features').innerText.split('|');
       const tech = dataNode.querySelector('.data-tech').innerText.split('|');
+      const imagesNode = dataNode.querySelector('.data-images');
+      const images = imagesNode ? imagesNode.innerText.split('|') : [];
       
       // 2. Populate Modal Top
       mBg.style.background = theme;
@@ -253,6 +255,17 @@ function initProjectExpansion() {
       dOverview.innerText = desc;
       dFeatures.innerHTML = features.map(f => `<li>${f}</li>`).join('');
       dTech.innerHTML = tech.map(t => `<li>${t}</li>`).join('');
+      
+      // 3.5. Populate Gallery
+      const dGallery = document.getElementById('doc-gallery');
+      if (dGallery) {
+        if (images.length > 0) {
+          dGallery.innerHTML = images.map(src => `<div class="doc-gallery-item"><img src="./${src}" alt="Screenshot" /></div>`).join('');
+          dGallery.parentElement.style.display = 'block';
+        } else {
+          dGallery.parentElement.style.display = 'none';
+        }
+      }
       
       // 4. Reset Doc State (Hide Docs)
       mDocs.classList.remove('active', 'visible');
