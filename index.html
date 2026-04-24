@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinematic Portfolio</title>
+  <!-- Preconnect to Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Global Loader -->
+  <div id="global-loader" class="global-loader"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Soft Background Gradient -->
+  <div class="bg-gradient"></div>
+
+  <main class="page-wrapper">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="section section-hero">
+      <div class="hero-card" id="hero-card">
+        <!-- Top Navbar -->
+        <header class="hero-nav container" id="hero-nav">
+          <div class="nav-brand">Mukund.</div>
+          <nav class="nav-links">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#roles" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+        </header>
+
+        <!-- Main Hero Content -->
+        <div style="flex: 1; display: flex; align-items: center; width: 100%;">
+          <div class="hero-content-split container">
+            <div class="hero-left">
+              <h1 class="hero-name" id="hero-name">Hi, I'm <span class="gradient-text">Mukund</span>
+              </h1>
+              <h2 class="hero-designation" id="hero-designation">UI/UX Engineer & Frontend Architect</h2>
+              <div class="hero-about-wrapper" id="hero-about">
+                <p class="hero-about-text">
+                  Building high-performance web experiences with a focus on clean design, smooth interactions, and
+                  real-world impact.
+                  Blending frontend precision with full-stack thinking to create products that feel truly alive.
+                </p>
+                <div class="hero-actions" id="hero-actions">
+                  <button class="btn-primary magnetic-hover">Hire Me</button>
+                  <button class="btn-secondary magnetic-hover">Let's Talk</button>
+                </div>
+                <div class="hero-socials" id="hero-socials">
+                  <a href="#" target="_blank" class="social-icon magnetic" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon magnetic" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon magnetic" aria-label="X">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hero-right">
+              <div class="hero-img-container" id="hero-img-wrapper">
+                <!-- Background Glow -->
+                <div class="hero-glow"></div>
+                
+                <!-- Semi Circles Design -->
+                <svg class="semi-circle-svg" viewBox="0 0 400 400">
+                  <circle cx="200" cy="200" r="190" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-dasharray="400 300" stroke-linecap="round" class="ring ring-1" />
+                  <circle cx="200" cy="200" r="170" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="10 15" class="ring ring-2" />
+                  <circle cx="200" cy="200" r="210" fill="none" stroke="var(--accent-primary)" stroke-width="3" stroke-dasharray="150 900" stroke-linecap="round" class="ring ring-3" />
+                </svg>
+
+                <!-- Circular Profile Image -->
+                <div class="img-circle-crop">
+                  <img src="./new_profile.jpg" alt="Profile" class="hero-img" id="hero-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section alt-bg cinematic-section">
+      <div class="section-glow glow-projects"></div>
+      <div class="container">
+        <h2 class="section-title reveal-item">Selected Works</h2>
+        <div class="projects-grid">
+
+          <!-- Project Card 1: Slidra -->
+          <div class="project-wrapper reveal-item">
+            <div class="project-card magnetic-hover">
+              <div class="project-preview">
+                <div class="project-image-wrapper">
+                  <div class="project-image" style="background: linear-gradient(135deg, #1A1A24, #0A0A0A);"></div>
+                </div>
+                <div class="project-info">
+                  <h3>Slidra</h3>
+                  <p>Premium AI Presentation Platform</p>
+                </div>
+              </div>
+              <div class="project-data" style="display: none;">
+                <div class="data-title">Slidra</div>
+                <div class="data-subtitle">Premium AI Presentation Platform</div>
+                <div class="data-short">Slidra is a modern web platform designed to simplify the creation,
+                  customization, and delivery of presentation content. It focuses on providing users with lightweight,
+                  dynamic, and easily editable slide experiences without the complexity of traditional tools.</div>
+                <div class="data-description">Slidra is an advanced, cinematic, AI-powered presentation platform that
+                  allows users to instantly generate fully-styled .pptx slide decks from simple prompts. Built with
+                  modern web aesthetics in mind (Dark Mode, Claymorphism, and seamless Framer Motion transitions),
+                  Slidra bridges the gap between AI generation and professional productivity.</div>
+                <div class="data-theme">linear-gradient(135deg, #0A0A0A, #1A1A24)</div>
+                <div class="data-features">Gemini AI Integration|Python-Backed PPTX Templating|Dynamic Render &
+                  Recharts|Monetag Ads Integration|Passcode Admin Dashboard</div>
+                <div class="data-tech">React 19|TypeScript|Tailwind CSS|Zustand|FastAPI|Firebase</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- SKILLS / ROLES SECTION -->
+    <section id="roles" class="section cinematic-section">
+      <div class="section-glow glow-roles"></div>
+      <div class="container">
+        <h2 class="section-title reveal-item">Roles & Capabilities</h2>
+        <div class="roles-grid">
+
+          <div class="role-card reveal-item">
+            <div class="role-icon"></div>
+            <h3>UI/UX Designer</h3>
+            <p>Crafting intuitive and cinematic user flows. Obsessed with micro-interactions, layout hierarchy, and
+              pixel-perfect execution.</p>
+            <div class="role-skills">Figma, Flutter, Spline, Principle</div>
+          </div>
+
+          <div class="role-card reveal-item">
+            <div class="role-icon"></div>
+            <h3>Frontend Developer</h3>
+            <p>Translating complex designs into fluid, responsive interfaces using modern frameworks, GPU-acceleration,
+              and advanced CSS techniques.</p>
+            <div class="role-skills">HTML5, CSS3, JavaScript, React, Three.js, GSAP</div>
+          </div>
+
+          <div class="role-card reveal-item">
+            <div class="role-icon"></div>
+            <h3>Full Stack Developer</h3>
+            <p>Building scalable backend architectures to support beautiful frontends. Integrating APIs, databases, and
+              high-performance services.</p>
+            <div class="role-skills">Node.js, PostgreSQL, Next.js, Firebase, AWS</div>
+          </div>
+
+          <div class="role-card reveal-item">
+            <div class="role-icon"></div>
+            <h3>Editor</h3>
+            <p>Polishing content flow and visual timing. Ensuring that motion graphics and narrative structure blend
+              seamlessly into the digital experience.</p>
+            <div class="role-skills">DaVinci Resolve, Premiere Pro, After Effects</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section alt-bg cinematic-section pb-large">
+      <div class="section-glow glow-contact"></div>
+      <div class="container contact-split">
+        <div class="contact-left reveal-item">
+          <h2 class="contact-headline">Building something?<br>Stuck on a problem?<br>Need help solving something?</h2>
+          <p class="contact-sub">Let's craft the future together.</p>
+          <div class="social-links">
+            <a href="#" target="_blank" class="social-icon magnetic" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" target="_blank" class="social-icon magnetic" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+            <a href="#" target="_blank" class="social-icon magnetic" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                </path>
+              </svg>
+            </a>
+            <a href="mailto:mukundganeshkumarg@hotmail.com" class="social-icon magnetic" aria-label="Email">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-item">
+          <form class="glass-form" id="contact-form">
+            <div class="input-group">
+              <input type="text" id="name" required />
+              <label for="name">Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+              <textarea id="message" rows="4" required></textarea>
+              <label for="message">Message / Problem</label>
+            </div>
+            <button type="submit" class="glow-btn magnetic">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Expansion Overlay -->
+  <div class="expansion-overlay" id="expansion-overlay"></div>
+
+  <!-- Global Project Modal -->
+  <div class="project-modal" id="project-modal">
+    <button class="close-modal magnetic" id="close-modal">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="modal-scroll-container">
+      <!-- Top Level Split View -->
+      <div class="modal-split">
+        <div class="modal-left">
+          <div class="modal-hero-image" id="modal-hero-image">
+            <div class="modal-gradient-bg"></div>
+            <!-- Decorative gloss/lighting -->
+            <div class="modal-hero-gloss"></div>
+          </div>
+        </div>
+        <div class="modal-right">
+          <h2 class="modal-title" id="modal-title">Project Title</h2>
+          <p class="modal-subtitle text-accent" id="modal-subtitle">Project Subtitle</p>
+          <div class="modal-intro" id="modal-intro">
+            Short introduction goes here.
+          </div>
+          <div class="modal-action">
+            <button class="glow-btn magnetic" id="view-doc-btn"><span>View Full Documentation</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Docs View (Hidden Initially) -->
+      <div class="modal-docs" id="modal-docs">
+        <div class="doc-section">
+          <h3>Overview</h3>
+          <p id="doc-overview">Detailed overview.</p>
+        </div>
+
+        <div class="doc-grid">
+          <div class="doc-section">
+            <h3>Key Features</h3>
+            <ul class="doc-list" id="doc-features"></ul>
+          </div>
+          <div class="doc-section">
+            <h3>Tech Stack</h3>
+            <ul class="doc-list doc-badges" id="doc-tech"></ul>
+          </div>
+        </div>
+
+        <div class="doc-section">
+          <h3>High-Level Architecture</h3>
+          <div class="doc-arch-container">
+            <img src="./architecture.png" alt="Slidra System Architecture" class="doc-arch-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="doc-arch-placeholder" style="display: none;">
+              <p>Please drop the diagram as 'architecture.png' in your project folder.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="doc-section">
+          <h3>Screenshots & Demos</h3>
+          <div class="doc-gallery">
+            <div class="doc-gallery-item"></div>
+            <div class="doc-gallery-item"></div>
+            <div class="doc-gallery-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Role Modal -->
+  <div class="role-modal" id="role-modal">
+    <button class="close-modal magnetic" id="close-role-modal">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="role-modal-content">
+      <div class="role-icon-large"></div>
+      <h2 class="role-modal-title" id="role-modal-title">Role Title</h2>
+      <p class="role-modal-desc" id="role-modal-desc">Role description...</p>
+
+      <div class="role-modal-skills-section">
+        <h3>Primary Capabilities</h3>
+        <ul class="role-modal-skills" id="role-modal-skills"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
